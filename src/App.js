@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {CounterContext} from "./context/index"
+import react from 'react';
 function App() {
+const counter = react.useContext(CounterContext)
+console.log(counter);
   return (
     <div className="App">
       <header className="App-header">
